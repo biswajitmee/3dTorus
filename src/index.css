@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'foremost';
+    src: url('font/Foremost Italic.ttf') format('truetype'),
+         url('font/Foremost Italic.otf') format('opentype'),
+         url('font/Foremost Regular.otf') format('opentype'),
+         url('font/Foremost Regular.ttf') format('truetype');
+  }
+}
+
+
+
+@layer components {
+  .CardContainer {
+    @apply flex overflow-hidden;
+  }
+
+  .spacer {
+
+    @apply flex-1;
+  }
+
+}
+
+
+@layer utilities {
+
+  .Lmorph11 {
+    display: none;
+  }
+
+  .Rmorph11 {
+    display: none;
+  }
+
+ 
+
+  .CardContainer {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    min-width: 80vw;
+    min-height: 500px;
+    background-color: #dedede;
+    border-radius: 15px;
+
+  }
+
+  .leftSvg {
+    margin-left: -50px;
+
+
+  }
+
+  .rightSvg {
+    margin-right: -150px;
+
+  }
+
+
+  .upperCard {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    min-width: 80vw;
+    min-height: 600px;
+    border-radius: 15px;
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+  }
+
+
+  .backgroundColor {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #3e00a0;  */
+    background-color: black;
+  
+  }
+
+  .SvgLayer {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .svgFlaoting {
+    margin-top: -350px;
+    margin-left: -150px;
+  }
+
+
+  .font-bagoda {
+    font-family: 'foremost', sans-serif;
+    color: #fff;
+  }
+.heading{ font-size:200px;}
+
+  .upperSvg {
+    position: absolute;
+    /* background-image: url(texture.svg); */
+    width: 100vw;
+    height: 100vh;
+    font-family: 'foremost', sans-serif;
+  }
+
+
+
+
+
+
+
+
+}
